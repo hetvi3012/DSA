@@ -1,0 +1,58 @@
+Student Information
+Name: Hetvi Bagdai
+Entry Number: 2023CSB1123
+Lab Assignment 1
+Folder Name: Hetvi_2023CSB1123_Lab_Assignment1
+
+Files in the Folder:
+problem1.c - Main file containing the implementation of the assignment.
+read_me.txt - This file, containing instructions and additional information.
+Compilation Instructions:
+To compile the program, open a terminal and navigate to the directory containing the problem1.c file. Run the following command:
+
+sh
+Copy code
+gcc main.c -o lab_assignment1
+Execution Instructions:
+To run the compiled program, use the following command:
+
+sh
+Copy code
+./lab_assignment1
+Program Instructions:
+The program will prompt you to enter a choice: 'a' or 'b'.
+
+Enter 'a' if you want to read the array from a file named ExampleFile.txt.
+Enter 'b' if you want to input the array manually.
+If you choose 'a':
+
+Ensure that the file ExampleFile.txt is in the same directory as the program.
+The file should contain integers separated by spaces or new lines.
+If you choose 'b':
+
+Input the integers separated by spaces and press Enter when done.
+The program will execute two functions:
+
+function1: Computes the cumulative sum array and processes two queries.
+function2: Builds a Fenwick Tree (Binary Indexed Tree) and processes the same two queries.
+The program will print the time taken for each query in both functions and the results of the queries.
+
+Important Notes:
+The program includes dynamic memory allocation. Ensure there is sufficient memory available to avoid issues.
+Error handling is included for file operations and memory allocation.
+The array size and other details will be printed during the execution.
+ExampleFile.txt Format:
+Ensure that ExampleFile.txt is formatted correctly, with integers separated by spaces or new lines. For example:
+
+5 10 15 20 25
+Queries and Functions:
+function1:
+Query 1: Increments the value of the first element by 5 and recalculates the cumulative sum array.
+Query 2: Computes the sum of the first n-5 elements from the cumulative sum array.
+function2:
+Query 1: Updates the first element by adding 5 using the Fenwick Tree.
+Query 2: Computes the sum of the first n-5 elements using the Fenwick Tree.
+Memory Management:
+The program dynamically allocates memory for the arrays. Ensure to free the allocated memory at the end of the program to avoid memory leaks.
+Error Handling:
+The program checks for file opening errors and memory allocation errors. Appropriate error messages are displayed, and the program exits gracefully in case of an error.
