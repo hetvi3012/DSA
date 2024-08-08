@@ -1,0 +1,72 @@
+Student Information
+Name: Hetvi Bagdai
+Entry Number: 2023CSB1123
+Lab Assignment 1
+Folder Name: Hetvi_2023CSB1123_Lab_Assignment2
+
+Files in the Folder:
+problem1.c - Main file containing the implementation of the assignment.
+read_me.txt - This file, containing instructions and additional information.
+Overview
+This project implements two algorithms to find the k-th smallest element in an array:
+
+Quicksort-based method (func1)
+Median-of-Medians method (func2)
+The performance of both methods is compared in terms of execution time.
+
+Files Included
+problem1.c: Main file containing the implementation of the assignment.
+read_me.txt: This file, containing instructions and additional information.
+ExampleFile.txt: An example input file with the size of the array, the value of k, and the array elements.
+Compilation Instructions
+To compile the program, open a terminal and navigate to the directory containing the problem1.c file. Run the following command:
+
+sh
+gcc problem1.c -o lab_assignment1
+Execution Instructions
+To run the compiled program, use the following command:
+
+sh
+./lab_assignment2
+Program Instructions
+The program will read the array from a file named ExampleFile.txt.
+
+Ensure that the file ExampleFile.txt is in the same directory as the program.
+The file should be formatted as follows:
+Copy code
+n
+k
+element1 element2 element3 ... elementn
+Where:
+
+n is the size of the array.
+k is the position of the k-th smallest element to find.
+element1 to elementn are the array elements.
+Queries and Functions
+The program executes two functions:
+
+func1 (Quicksort-based method)
+
+Computes the k-th smallest element using the Quicksort algorithm.
+Prints the k-th smallest element and the time taken to execute this method.
+func2 (Median-of-Medians method)
+
+Computes the k-th smallest element using the Median-of-Medians algorithm.
+Prints the k-th smallest element and the time taken to execute this method.
+Example Input File (ExampleFile.txt)
+Ensure that ExampleFile.txt is formatted correctly. For example:
+
+5
+3
+10 20 15 25 30
+Memory Management
+The program dynamically allocates memory for the arrays. Ensure to free the allocated memory at the end of the program to avoid memory leaks.
+
+Error Handling
+The program includes error handling for file operations and memory allocation:
+
+If the file cannot be opened, an error message is displayed and the program exits.
+If memory allocation fails, an error message is displayed and the program exits.
+Important Notes
+The program prints the size of the array (n) and the value of k during execution.
+The array elements are read from the input file ExampleFile.txt.
